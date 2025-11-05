@@ -1,0 +1,7 @@
+{
+  "name": "SorteoCoche",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

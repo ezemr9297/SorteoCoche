@@ -1,0 +1,1126 @@
+/* Sorteo BMW M3 Styles */
+
+.sorteo-content {
+  --background: #f5f5f5;
+}
+
+/* Container Utilities */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Image Styles */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder Images (Purple rectangles) - Backup */
+.placeholder-image,
+.placeholder-video {
+  background-color: #8b4fb3;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+/* Typography */
+.highlight {
+  font-weight: 600;
+  color: #917646;
+}
+
+.highlight-gold {
+  color: #c9a76b;
+}
+
+.title-dark {
+  color: #10293f;
+}
+
+/* CTA Button Global Styles */
+.cta-button {
+  --background: #10293f !important;
+  --background-hover: #0d1f2e !important;
+  --background-activated: #0a1822 !important;
+  --color: #ffffff !important;
+  --border-radius: 0;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  text-transform: none;
+
+  width: 217px;
+  min-width: 201px;
+  height: 40px;
+
+  margin: 0;
+}
+
+/* Override Ionic color variants for CTA buttons */
+ion-button.cta-button {
+  --background: #10293f !important;
+  --background-hover: #0d1f2e !important;
+  --background-activated: #0a1822 !important;
+  --color: #ffffff !important;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+
+  .cta-button {
+    margin-left: auto;
+    color: #10293f;
+    width: 201px;
+    height: 40px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background-color: white;
+  padding: 60px 0 80px 0;
+}
+
+.hero-title {
+  font-size: 56px;
+  text-align: left;
+  margin-bottom: 40px;
+  color: #10293f;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+  line-height: 1.2;
+  margin-left: 0;
+}
+
+.hero-subtitle {
+  display: block;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.11em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 55px;
+  letter-spacing: 0px;
+  color: #b8915e;
+}
+
+/* Hero Content Blocks - Nueva estructura con 3 subloques */
+.hero-content-blocks {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Subloque 1: 279px x 393px con imagen abajo */
+.hero-block-1 {
+  width: 21.37%;
+  height: 393px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.hero-block-1-image {
+  width: 100%;
+  height: 185px;
+
+  img {
+    height: 185px;
+    border-radius: 0;
+  }
+}
+
+/* Subloque 2: 696px x 393px con imagen grande */
+.hero-block-2 {
+  width: 53.5%;
+  height: 393px;
+  flex-shrink: 0;
+}
+
+.hero-block-2-image {
+  width: 100%;
+  height: 393px;
+
+  img {
+    height: 393px;
+    border-radius: 0;
+  }
+}
+
+/* Subloque 3: 327px x 393px con imagen arriba + hero-text + hero-footer */
+.hero-block-3 {
+  width: 25.13%;
+  height: 393px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  flex-shrink: 0;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.hero-block-3-image {
+  width: 100%;
+  height: 199px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+
+  img {
+    height: 199px;
+    border-radius: 0;
+  }
+}
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  padding-top: 5px;
+  margin-top: 0;
+  height: 194px;
+
+  p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #10293f;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .cta-button {
+    margin-top: 0;
+    align-self: flex-start;
+  }
+}
+
+.hero-price {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 75px 0 0 0;
+  color: #1a1a1a;
+}
+
+.hero-price-bold {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+
+.hero-footer {
+  font-size: 12px;
+  color: #10293f;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+}
+
+/* Benefits Section */
+.benefits {
+  background-color: #10293f;
+  color: #10293f;
+  padding: 90px 0 100px 0;
+}
+
+.section-title {
+  font-size: 56px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  .second-line {
+    display: block;
+    padding-left: 266px;
+  }
+}
+
+.section-title-left {
+  font-size: 52px;
+  margin-bottom: 35px;
+  margin-left: 370px;
+  line-height: 1.15;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  letter-spacing: 0.06em;
+
+  .title-line-left {
+    display: block;
+    text-align: left;
+    color: #10293f;
+  }
+
+  .title-line-center {
+    display: block;
+    text-align: left;
+    padding-left: 390px;
+  }
+}
+
+.benefits-grid {
+  padding: 0;
+
+  ion-row {
+    margin: 0;
+  }
+
+  ion-col {
+    padding: 0 12.5px;
+  }
+}
+
+.benefit-card {
+  background-color: #e0f0ff;
+  padding: 45px 35px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #10293f;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 1.2;
+
+    strong:only-child {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// Excepción: tercera tarjeta no tiene espacio extra en strong
+ion-col:nth-child(3) .benefit-card p strong:only-child {
+  margin-bottom: 0px;
+}
+
+/* Video Section */
+.video-section {
+  background-color: #ffffff;
+  padding: 90px 0;
+}
+
+.video-content {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: flex-start;
+
+  .section-title-left {
+    grid-column: 1 / -1;
+    margin-bottom: 50px;
+  }
+}
+
+.video-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 450px;
+  box-sizing: border-box;
+  text-align: right;
+  gap: 0;
+
+  .cta-button {
+    margin-top: 20px;
+    margin-left: auto;
+    width: 217px;
+    min-width: 217px;
+    height: 40px;
+  }
+}
+
+.video-text p {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #10293f;
+  text-align: right;
+}
+
+.video-container {
+  position: relative;
+
+  img {
+    min-height: 450px;
+    height: 450px;
+    border-radius: 12px;
+  }
+}
+
+.placeholder-video {
+  min-height: 450px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Specs Section */
+.specs {
+  background-color: #10293f;
+  color: white;
+  padding: 90px 0 100px 0;
+}
+
+.specs .section-title {
+  text-align: left;
+  line-height: 1.1;
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.competition-text {
+  display: block;
+  padding-left: 216px;
+}
+
+.specs-subtitle {
+  text-align: left;
+  font-size: 56px;
+  margin-top: 0;
+  margin-bottom: 65px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.specs-grid {
+  padding: 0;
+
+  ion-row {
+    margin: 0;
+  }
+
+  ion-col {
+    padding: 0 15px 30px 15px;
+  }
+}
+
+.spec-card {
+  background-color: #e0f0ff;
+  padding: 45px 35px;
+  border-radius: 10px;
+  height: 100%;
+
+  h3 {
+    font-size: 32px;
+    margin-bottom: 22px;
+    color: #10293f;
+    font-weight: 700;
+  }
+
+  p {
+    color: #10293f;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.cta-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    margin-bottom: 50px;
+  }
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #10293f;
+  padding: 0 0 90px 0;
+  position: relative;
+}
+
+.gallery-content {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.gallery-main {
+  img {
+    height: 600px;
+    min-height: 600px;
+    border-radius: 0;
+  }
+}
+
+.gallery-thumbs {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  gap: 0;
+}
+
+.thumb {
+  flex: 0 0 calc(600px / 6);
+  height: calc(600px / 6);
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Why Section */
+.why-section {
+  background-color: #ffffff;
+  padding: 90px 0;
+}
+
+.why-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.why-image img {
+  min-height: 650px;
+  height: 650px;
+  border-radius: 12px;
+}
+
+.why-text {
+  h2 {
+    font-size: 56px;
+    color: #10293f;
+    margin-bottom: 35px;
+    line-height: 1.15;
+    font-weight: 400;
+
+    .highlight-gold {
+      padding-left: 60px;
+    }
+  }
+
+  p {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 0.6;
+    font-weight: 400;
+    color: #10293f;
+  }
+
+  p.space-after {
+    margin-bottom: 25px;
+  }
+}
+
+/* Purpose Section */
+.purpose-section {
+  background-color: #ffffff;
+  padding: 90px 0;
+}
+
+.purpose-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.purpose-text {
+  text-align: right;
+
+  h2 {
+    font-size: 52px;
+    margin-bottom: 35px;
+    line-height: 1.15;
+    font-weight: 400;
+  }
+
+  p {
+    margin-bottom: 6px;
+    font-size: 17px;
+    line-height: 0.6;
+    color: #000000;
+  }
+
+  .cta-button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    width: 217px;
+    min-width: 217px;
+  }
+}
+
+.purpose-footer {
+  font-size: 13px;
+  color: #666;
+  margin-top: 35px;
+}
+
+.purpose-image img {
+  min-height: 650px;
+  height: 650px;
+  border-radius: 12px;
+}
+
+/* Final CTA Section */
+.final-cta {
+  background-image: url("/assets/sections/final-cta-bg.jpg");
+  background-color: #8b4fb3;
+  padding: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 910px;
+}
+
+.final-cta-content {
+  min-height: 910px;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  color: white;
+  padding: 120px 40px 80px 40px;
+  position: relative;
+
+  h2 {
+    font-size: 56px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .cta-button {
+    position: absolute;
+    left: 400px;
+    width: 217px;
+    height: 40px;
+    margin: 0;
+  }
+}
+
+/* Price Section */
+.price-section {
+  background-color: #ffffff;
+  padding: 90px 0;
+}
+
+.price-section-title {
+  font-size: 56px;
+  color: #10293f;
+  text-align: left;
+  margin-bottom: 70px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  .first-line {
+    display: inline-block;
+    padding-left: 515px;
+  }
+
+  .highlight-gold {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    padding-left: 0px;
+  }
+}
+
+.price-content {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  margin-top: 60px;
+  align-items: stretch;
+}
+
+/* Bloque 1: ¿Qué son 5€? hasta BMW M3 Touring */
+.price-block-1 {
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1;
+    color: #10293f;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .price-question {
+    font-size: 16px;
+    font-weight: 400;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .price-highlight {
+    font-weight: 400;
+    color: #10293f;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Bloque 3: 5 euros no cambian el mundo */
+.price-block-3 {
+  margin-bottom: 30px;
+
+  .price-statement {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #1a2940;
+  }
+}
+
+/* Bloque 4: Pero pueden cambiar el tuyo */
+.price-block-4 {
+  margin-bottom: 30px;
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #10293f;
+  }
+}
+
+.price-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.price-main-image {
+  flex: 1;
+  display: flex;
+
+  img {
+    min-height: unset;
+    height: 100%;
+    border-radius: 12px;
+  }
+}
+
+.price-thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+
+  .thumb img {
+    min-height: 90px;
+    height: 90px;
+    border-radius: 8px;
+  }
+}
+
+/* Trust Section */
+.trust-section {
+  background-color: #10293f;
+  color: white;
+  padding: 90px 0 100px 0;
+
+  .section-title {
+    text-align: left;
+
+    .trust-second-line {
+      display: inline-block;
+      padding-left: 152px;
+    }
+  }
+
+  .container {
+    position: relative;
+    min-height: 600px;
+  }
+}
+
+.trust-content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 60px;
+  min-height: 500px;
+}
+
+.logo-large {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    max-width: 405px;
+    height: auto;
+  }
+}
+
+.trust-right {
+  display: contents;
+
+  p {
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.trust-block-1 {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  margin-bottom: 0;
+
+  .trust-sub-1,
+  .trust-sub-2,
+  .trust-sub-3 {
+    p {
+      margin-bottom: 0px;
+      font-size: 17px;
+      line-height: 0.5;
+    }
+  }
+
+  .trust-sub-1 {
+    margin-bottom: 40px;
+  }
+
+  .trust-sub-2 {
+    margin-bottom: 40px;
+  }
+
+  .trust-sub-3 {
+    margin-bottom: 0;
+  }
+}
+
+.trust-block-2 {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
+  align-self: end;
+  margin-bottom: 0;
+
+  .trust-block-2-sub-1 {
+    margin-bottom: 60px;
+    line-height: 0.5;
+  }
+
+  .trust-block-2-sub-2 {
+    margin-bottom: 0px;
+    line-height: 0.5;
+
+    .cta-button {
+      margin-right: 0;
+      margin-left: auto;
+      margin-top: 30px;
+      display: block;
+    }
+  }
+
+  .extra-spacing {
+    margin-bottom: 26px;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #ede3d1;
+  padding: 90px 0;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.faq-section-title {
+  font-size: 80px;
+  margin-bottom: 0;
+  line-height: 1.15;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #10293f;
+  letter-spacing: 0.06em;
+
+  .faq-second-line {
+    display: block;
+    padding-left: 200px;
+  }
+}
+
+.faq-list {
+  display: grid;
+  gap: 0px;
+}
+
+.faq-item {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #917646;
+  box-shadow: none;
+
+  ion-card-header {
+    padding: 45px 40px 0 40px;
+  }
+
+  ion-card-title {
+    font-size: 24px;
+    color: #c9a76b;
+    font-weight: 700;
+  }
+
+  ion-card-content {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #917646;
+    padding: 18px 40px 45px 40px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #1a2940;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-logo-image {
+  img {
+    width: 244px;
+    height: auto;
+  }
+}
+
+.footer-logo-text {
+  p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #b8915e;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+
+  .section-title,
+  .section-title-left {
+    font-size: 32px;
+  }
+
+  .hero-content,
+  .video-content,
+  .why-content,
+  .purpose-content,
+  .price-content,
+  .trust-content,
+  .faq-content {
+    grid-template-columns: 1fr;
+  }
+
+  .car-images {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-content {
+    flex-direction: column;
+    height: auto;
+
+    .gallery-main .placeholder-image {
+      height: 400px;
+    }
+  }
+
+  .gallery-thumbs {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+
+    .thumb {
+      min-width: 150px;
+    }
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .price-thumbs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .section-title,
+  .section-title-left {
+    font-size: 24px;
+  }
+}
